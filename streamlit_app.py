@@ -10,7 +10,8 @@ import streamlit as st
 from pygwalker.api.streamlit import StreamlitRenderer
 
 #uploaded_file = st.file_uploader("Your data file")
-uploaded_file = "/home/admin-1/workspace/kepler_ws/KeplerRobot/logs/st_rl/k1_flat/2025-04-08_15-12-21/metrics/states_1.csv"
+#uploaded_file = "/home/admin-1/workspace/kepler_ws/KeplerRobot/logs/st_rl/k1_flat/2025-04-08_15-12-21/metrics/states_1.csv"
+uploaded_file = "./data/states_1.csv"
 if uploaded_file is not None:
     all_df_data = pd.read_csv(uploaded_file)
     columns = list(all_df_data.columns)
